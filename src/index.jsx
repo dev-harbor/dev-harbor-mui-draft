@@ -68,7 +68,6 @@ function MUIEditor({
     const translator = new Translator(translationsRef.current);
     return translator.get(id);
   }, []);
-  const classes = useStyles();
 
   React.useEffect(() => {
     setIsToolbarVisible(toolbarVisibleConfig);

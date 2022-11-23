@@ -13,7 +13,6 @@ function ButtonControl({
   badgeColor = null,
   ...rest
 }) {
-  const classes = useStyles({ badgeColor });
   return (
     <Tooltip title={text} aria-disabled={disabled}>
       <span>
@@ -28,7 +27,7 @@ function ButtonControl({
               vertical: "top",
               horizontal: "left",
             }}
-            classes={{ badge: { background: props.badgeColor } }}
+            classes={{ badge: { background: badgeColor } }}
             overlap="circle"
             badgeContent=" "
             invisible={badgeColor === null}

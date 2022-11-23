@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <Container>
+    <StyledContainer>
       <OptionsWrapper>
         <Grid container alignItems="center" justify="flex-end" spacing={4}>
           <Grid item>
@@ -87,13 +87,22 @@ function App() {
       />
 
       <pre>{html}</pre>
-    </Container>
+    </StyledContainer>
   );
 }
 
 export default App;
 
 const OptionsWrapper = styled.div`
-  padding-top: "48px";
-  padding-bottom: "24px";
+  padding-top: 48px;
+  padding-bottom: 24px;
+`;
+
+const StyledContainer = styled(Container)`
+  .MuiPaper-root {
+    margin-top: 12px !important;
+    padding: 24px !important;
+    max-height: 100px;
+    overflow-y: auto !important;
+  }
 `;

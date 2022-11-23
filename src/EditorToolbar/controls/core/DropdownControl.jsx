@@ -43,5 +43,5 @@ DropdownControl.propTypes = {
 export default DropdownControl;
 
 const StyledSelect = styled(Select)`
-  margin: "8px";
+  margin: 8px;
 `;
