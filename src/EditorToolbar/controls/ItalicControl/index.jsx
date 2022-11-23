@@ -1,19 +1,20 @@
-import React from 'react';
-import useEditor from '../../../hooks/useEditor';
-import ToggleInlineStyleButtonControl from '../core/ToggleInlineStyleButtonControl';
-import FormatItalicIcon from '@material-ui/icons/FormatItalic';
-import inlineStyles from '../../../types/inlineStyles';
+import React from "react";
+import useEditor from "../../../hooks/useEditor";
+import ToggleInlineStyleButtonControl from "../core/ToggleInlineStyleButtonControl";
+import FormatItalicIcon from "@mui/icons-material/FormatItalic";
+import inlineStyles from "../../../types/inlineStyles";
 
 function ItalicControl() {
-    const editor = useEditor();
+  const editor = useEditor();
 
-    return (
-        <ToggleInlineStyleButtonControl
-            inlineStyle={inlineStyles.ITALIC}
-            text={editor.translate('controls.italic.title')}>
-            <FormatItalicIcon />
-        </ToggleInlineStyleButtonControl>
-    );
+  return (
+    <ToggleInlineStyleButtonControl
+      inlineStyle={inlineStyles.ITALIC}
+      text={editor.translate("controls.italic.title")}
+    >
+      <FormatItalicIcon />
+    </ToggleInlineStyleButtonControl>
+  );
 }
 
 export default ItalicControl;
