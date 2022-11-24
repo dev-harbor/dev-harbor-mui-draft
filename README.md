@@ -1,5 +1,7 @@
 # react-mui-draft-wysiwyg
 
+> This repository contributes to react-mui-draft-wysiwyg from Kelsier90. The aim is to update react to version 18.2.0 and to replace @material-ui/icons and @material-ui/core with their new versions.
+
 > React component that allows to use a rich editor based on Material UI and Draft-js
 
 [![NPM](https://img.shields.io/npm/v/react-mui-draft-wysiwyg.svg)](https://www.npmjs.com/package/react-mui-draft-wysiwyg) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
